@@ -1,0 +1,15 @@
+/.idea
+/.claude
+.DS_Store
+
+# Build outputs and runtime state of the examples. None of this belongs in the repo: a fresh
+# clone should build its own, and a committed build/ leaves stale jars and Gradle report files
+# lying around for the next reader.
+/*/build/
+/*/target/
+/*/.gradle/
+/*/FRONTCACHE_HOME/cache/
+/*/FRONTCACHE_HOME/logs/
+
+# front-door/docker: the .env copied from .env.example and edited for a real origin
+/front-door/docker/.env
